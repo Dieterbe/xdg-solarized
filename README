@@ -1,0 +1,15 @@
+= XDG-compliant ini file for solarized color definitions =
+== What? ==
+Exposes the superb "solarized" color palette through a simple ini-style
+config file, allowing other programs to easily obtain the right color definitions.
+(as seen on http://ethanschoonover.com/solarized#the-values)
+Specifically, shell scripts can just source the file.
+As for the XDG part, see http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+
+Parent project: http://ethanschoonover.com/solarized
+Parent project repository: https://github.com/altercation/solarized/
+This project: https://github.com/Dieterbe/xdg-solarized
+
+== Installation ==
+mkdir -p ${XDG_CONFIG_HOME:-$HOME/.config}/solarized/
+cp colors.ini ${XDG_CONFIG_HOME:-$HOME/.config}/solarized/
